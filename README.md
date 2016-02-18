@@ -12,7 +12,13 @@ Add this simple widget for them to know your software is not prone to bugs.
 
 ## Usage
 
-Just include this script tag before your opening body tag:
+For quick use, just browse to this page, including the URL of your working software in the "u" param:
+
+http://slashman.github.io/programmers-seal-of-approval/?u=http://slashie.net
+
+(Note that this will not work for all websites, because of iFrame origin rules.)
+
+For persistent use (because your code always works), include this script tag before your opening body tag:
 
 ```html
 <script src = "http://slashman.github.io/programmers-seal-of-approval/psoa.js"></script>

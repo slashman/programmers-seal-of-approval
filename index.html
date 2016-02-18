@@ -1,8 +1,38 @@
 <html>
 <head>
+<style>
+body {
+	border: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+</style>
 <script src = "psoa.js"></script>
+<script>
+function loadFrame(){
+	var url = getParameterByName("u");
+	if (url){
+		if (url.indexOf("http") == -1){
+			url = "http://"+url;
+		}
+	}
+	if (!url || url === ''){
+		url = 'sample.html';
+	}
+
+	document.getElementById("contentFrame").src = url;
+}
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+window.addEventListener("load", loadFrame);
+</script>
 </head>
 <body>
-<p>This page works</p>
+<iframe id = "contentFrame" style="border: 0; width: 100%; height: 100%">Your browser doesn't support iFrames.</iframe>
 </body>
 </html>
