@@ -1,6 +1,6 @@
 # programmers-seal-of-approval
 
-Are you tired of QA making up bugs just to screw your life? 
+Are you tired of QA making up bugs just to screw up your life? 
 
 Add this simple widget for them to know your software is not prone to bugs.
 
