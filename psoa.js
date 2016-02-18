@@ -1,6 +1,6 @@
 function show(){
 	var sealContainer = document.createElement("div");
-	sealContainer.style.position = "absolute";		
+	sealContainer.style.position = "fixed";		
 	sealContainer.style.top = "5px";
 	sealContainer.style.right = "5px";
 	sealContainer.style.zIndex = 999;
